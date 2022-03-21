@@ -1,0 +1,13 @@
+.App {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import "./assets/reset";
+@import "./styles/_Header";
