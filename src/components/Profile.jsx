@@ -10,7 +10,6 @@ const Profile = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openMenu = () => {
-    console.log('toggle');
     setIsOpen(!isOpen);
   };
 

@@ -1,9 +1,16 @@
 .App {
+  position: relative;
+  //left: -300px;
+  display: grid;
+  grid-template-columns: 100vw 300px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   a {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -1px;
   }
 }
 
@@ -11,3 +18,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import "./assets/reset";
 @import "./styles/_Header";
+@import "./styles/_Calendar";
