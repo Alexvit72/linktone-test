@@ -1,11 +1,16 @@
 .App {
   position: relative;
-  //left: -300px;
   display: grid;
   grid-template-columns: 100vw 300px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
+  &.with-calendar {
+    left: -300px;
+    overflow-x: visible;
+  }
   a {
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
@@ -19,3 +24,4 @@
 @import "./assets/reset";
 @import "./styles/_Header";
 @import "./styles/_Calendar";
+@import "./styles/_HeaderMain";
