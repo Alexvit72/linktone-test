@@ -86,8 +86,6 @@
         }
       }
       & + .category-menu {
-        //display: flex;
-        //flex-direction: column;
         height: 0;
         overflow: hidden;
         background: #191c21;
@@ -144,7 +142,7 @@
             margin-right: 0.8rem;
           }
           &.opened + .category-menu {
-            height: auto;
+            height: 190px;
             padding: 10px 0;
           }
         }

@@ -20,7 +20,10 @@ const Header = () => {
       <div className="right">
         <form action="/" onSubmit={(e) => searchRequest(e)}>
           <div className="search-block">
-            <input type="text" onChange={(e) => setValue(e.target.value)} />
+            <input type="text"
+              onChange={(e) => setValue(e.target.value)}
+              placeholder="Поиск..."
+            />
             <button className="search-icon">
               <img src={search} alt="искать"></img>
             </button>
