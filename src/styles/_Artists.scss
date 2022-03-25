@@ -1,0 +1,49 @@
+.artists {
+  padding: 3rem 40px;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    .add {
+      padding: 1rem 1.6rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+      background: #0088cc;
+      border-radius: 0.25rem;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        background: #00a1f2;
+      }
+    }
+    .search-block {
+      align-self: flex-start;
+      display: flex;
+      border-radius: 35px;
+      overflow: hidden;
+      background: #fff;
+      input {
+        width: 149px;
+        padding: 8px 10px 8px 20px;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          font-size: 0.9rem;
+          color: #acacac;
+        }
+      }
+      .search-icon {
+        background: none;
+        border: none;
+        padding: 10px 15px 6px 10px;
+        img {
+          width: 18px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

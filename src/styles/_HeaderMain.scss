@@ -1,6 +1,4 @@
 .main-header {
-  position: fixed;
-  width: 100%;
   background: #171717;
   color: #777;
   display: flex;
@@ -14,9 +12,10 @@
     box-sizing: content-box;
     font-size: 1.2rem;
     letter-spacing: normal;
+    line-height: 50px;
     height: 50px;
     padding: 0 20px;
-    line-height: 50px;
+    margin-left: -1px;
   }
   .right-nav {
     display: flex;

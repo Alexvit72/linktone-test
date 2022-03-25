@@ -8,8 +8,8 @@ const Header = () => {
 
   const [value, setValue] = useState('');
 
-  const searchRequest = () => {
-    console.log(value);
+  const searchRequest = (e) => {
+    console.log('value', value);
   };
 
   return (
@@ -18,12 +18,14 @@ const Header = () => {
         <a href="/"><img src={logo} alt="linktone" /></a>
       </div>
       <div className="right">
-        <div className="search-block">
-          <input type="text" onChange={(e) => setValue(e.target.value)} />
-          <div className="search-icon">
-            <img src={search} alt="искать" onClick={searchRequest}></img>
+        <form action="/" onSubmit={(e) => searchRequest(e)}>
+          <div className="search-block">
+            <input type="text" onChange={(e) => setValue(e.target.value)} />
+            <button className="search-icon">
+              <img src={search} alt="искать"></img>
+            </button>
           </div>
-        </div>
+        </form>
         <Profile />
       </div>
     </header>

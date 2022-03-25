@@ -17,6 +17,17 @@
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: -1px;
   }
+  .main {
+  }
+  .main-wrap {
+    display: flex;
+    height: 100%;
+    padding-top: 60px;
+    background: #ecedf0;
+    .main-content {
+      width: 100%;
+    }
+  }
 }
 
 
@@ -25,3 +36,5 @@
 @import "./styles/_Header";
 @import "./styles/_Calendar";
 @import "./styles/_HeaderMain";
+@import "./styles/_ArtistNav";
+@import "./styles/_Artists";
