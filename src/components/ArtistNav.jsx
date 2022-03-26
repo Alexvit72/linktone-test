@@ -12,14 +12,14 @@ const categories = [
 ];
 
 
-const ArtistNav = () => {
+const ArtistNav = ({ shown, toggle }) => {
 
-  const [openedNav, setOpenedNav] = useState(false);
+  //const [openedNav, setOpenedNav] = useState(false);
   const [openedCategory, setOpenedCategory] = useState('');
 
-  const showWide = () => {
+  /*const showWide = () => {
     setOpenedNav(openedNav => !openedNav);
-  };
+  };*/
 
   const openMenu = (name) => {
     if (openedCategory === name) {
@@ -30,10 +30,10 @@ const ArtistNav = () => {
   };
 
   return (
-    <aside className={`artists-nav ${openedNav ? 'wide' : ''}`}>
+    <aside className={`artists-nav ${shown ? 'wide' : ''}`}>
       <header className="artists-nav_header">
         <h3>Навигация</h3>
-        <div className="artists-nav-open" onClick={showWide}>
+        <div className="artists-nav-open" onClick={toggle}>
           <div className="icon">
             <img src={menu} alt="открыть" />
           </div>

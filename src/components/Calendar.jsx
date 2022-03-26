@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DatePicker from "react-datepicker";
 
+
 import "react-datepicker/dist/react-datepicker.css";
 
 
@@ -35,7 +36,7 @@ const Calendar = () => {
   }, [shownMonthPicker, shownYearPicker]);
 
   const openMonth = () => setShownMonthPicker(true);
-  
+
   const openYear = () => setShownYearPicker(true);
 
   const handleChange = (date) => {
@@ -47,17 +48,30 @@ const Calendar = () => {
     setStartDate(date);
   };
 
+  const closeCalendar = (e) => {
+    let app = document.querySelector('.App');
+    let arrow = app.querySelector('.toggle-right');
+    app.classList.remove('with-calendar');
+    arrow.children[0].classList.remove('open');
+  };
+
   return (
     <aside className="calendar">
-      <h3 className="calendar-title">Календарь событий</h3>
-      <DatePicker
-        selected={startDate}
-        onChange={handleChange}
-        inline
-        showMonthYearPicker={shownMonthPicker}
-        showFourColumnMonthYearPicker
-        showYearPicker={shownYearPicker}
-      />
+      <div className="top" onClick={(e) => closeCalendar(e)}>
+        <span>Collapse</span>
+        <span>{'>'}</span>
+      </div>
+      <div className="calendar-wrap">
+        <h3 className="calendar-title">Календарь событий</h3>
+        <DatePicker
+          selected={startDate}
+          onChange={handleChange}
+          inline
+          showMonthYearPicker={shownMonthPicker}
+          showFourColumnMonthYearPicker
+          showYearPicker={shownYearPicker}
+        />
+      </div>
     </aside>
   );
 }

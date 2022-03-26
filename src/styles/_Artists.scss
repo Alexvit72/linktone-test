@@ -2,9 +2,19 @@
   padding: 3rem 40px;
   height: calc(100vh - 113px);
   overflow-y: auto;
+  @media (max-width: 767px) {
+    height: calc(100vh - 170px);
+  }
+  @media (max-width: 520px) {
+    padding: 2rem 20px 2rem;
+  }
   .top {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 520px) {
+      flex-direction: column;
+      align-items: center;
+    }
     .add {
       padding: 1rem 1.6rem;
       font-size: 0.9rem;
@@ -24,6 +34,10 @@
       border-radius: 35px;
       overflow: hidden;
       background: #fff;
+      @media (max-width: 520px) {
+        align-self: center;
+        margin-top: 1.5rem;
+      }
       input {
         width: 149px;
         padding: 8px 10px 8px 20px;
@@ -51,6 +65,12 @@
   .bottom {
     display: flex;
     margin-top: 2.5rem;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    @media (max-width: 520px) {
+      margin-top: 1.5rem;
+    }
     .types {
       flex: 0 0 18%;
       max-width: 18%;
@@ -59,6 +79,18 @@
       box-shadow: 0px 0px 37px -36px rgb(0 0 0 / 40%);
       border-radius: 5px;
       padding: 40px 37px;
+      @media (max-width: 1199px) {
+        flex: 0 0 36%;
+        max-width: 36%;
+      }
+      @media (max-width: 991px) {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+      }
+      @media (max-width: 520px) {
+        margin-bottom: 20px;
+      }
       .title {
         display: flex;
         justify-content: space-between;
@@ -115,9 +147,23 @@
     .content {
       flex: 0 0 82%;
       max-width: 82%;
+      @media (max-width: 1199px) {
+        flex: 0 0 64%;
+        max-width: 64%;
+      }
+      @media (max-width: 991px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
       .page {
         display: flex;
         flex-wrap: wrap;
+        @media (max-width: 1199px) {
+          justify-content: space-between;
+        }
+        @media (max-width: 520px) {
+          flex-direction: column;
+        }
         .artist-item {
           flex: 0 0 auto;
           width: 22%;
@@ -126,11 +172,25 @@
           border-radius: 5px;
           padding: 20px;
           margin: 0 0 20px 20px;
+          @media (max-width: 1199px) {
+            flex: 0 0 45%;
+            width: 45%;
+          }
+          @media (max-width: 991px) {
+            margin: 20px 0 20px 0;
+            flex: 0 0 48.5%;
+            width: 48.5%;
+          }
+          @media (max-width: 520px) {
+            margin: 10px 0 10px 0;
+            flex: 0 0 100%;
+            width: 100%;
+          }
           .image {
             margin-bottom: 0.5rem;
             img {
               width: 100%;
-              max-width: 294px;
+              max-width: 100%;
             }
           }
           .type {
@@ -171,15 +231,34 @@
         }
       }
       .rc-pagination {
+        position: relative;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         font-size: 1.5rem;
         color: #777;
+        @media (max-width: 767px) {
+          width: fit-content;
+          margin: auto;
+        }
+        @media (max-width: 520px) {
+          margin: 1rem auto 2rem;
+        }
         &-total-text {
           flex-grow: 1;
           margin-left: 20px;
           font-size: 0.8rem;
+          @media (max-width: 991px) {
+            margin-left: 0;
+          }
+          @media (max-width: 767px) {
+            position: absolute;
+            width: fit-content;
+            top: 3.5rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
         }
         &-item {
           flex-shrink: 0;
@@ -195,6 +274,10 @@
           margin-right: 0.5rem;
           cursor: pointer;
           transition: all 0.2s ease-in-out;
+          @media (max-width: 370px) {
+            width: 25px;
+            height: 25px;
+          }
           &:not(&-active):hover {
             background: #ecedf0;
             color: #0088cc;

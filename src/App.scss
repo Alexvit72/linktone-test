@@ -3,15 +3,24 @@ body {
 }
 
 .App {
-  position: relative;
   display: grid;
   grid-template-columns: 100vw 300px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   &.with-calendar {
+    position: relative;
     left: -300px;
     overflow-x: visible;
+    @media (max-width: 767px) {
+      left: 0;
+      overflow-x: hidden;
+      .calendar {
+        position: absolute;
+        z-index: 2;
+        width: 100vw;
+      }
+    }
   }
   a {
     font-family: 'Poppins', sans-serif;
@@ -26,6 +35,9 @@ body {
     height: 100%;
     padding-top: 60px;
     background: #ecedf0;
+    @media (max-width: 767px) {
+      padding-top: 120px;
+    }
     .main-content {
       width: 100%;
     }

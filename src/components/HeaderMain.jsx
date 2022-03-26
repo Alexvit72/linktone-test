@@ -2,6 +2,7 @@ import React from 'react';
 import home from '../assets/images/home.svg';
 import arrowLeft from '../assets/images/arrow-left.png';
 
+
 const HeaderMain = () => {
 
   const openCalendar = (e) => {

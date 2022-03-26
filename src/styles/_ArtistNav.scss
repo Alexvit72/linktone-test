@@ -1,10 +1,18 @@
 .artists-nav {
   background: #1d2127;
+  @media (max-width: 767px) {
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+  }
   &_header {
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 767px) {
+      display: none;
+    }
     h3 {
       padding: 2px 0 0 15px;
       font-size: 0.8rem;
@@ -49,6 +57,9 @@
       align-items: center;
       color: #abb4be;
       transition: none;
+      @media (max-width: 767px) {
+        width: 100vw;
+      }
       .category-inner {
         display: flex;
         align-items: center;
@@ -120,6 +131,9 @@
     .categories {
       width: 73px;
       overflow: hidden;
+      @media (max-width: 767px) {
+        width: 0;
+      }
       .category {
         padding-right: 0;
         .category-icon {
