@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/linktone-test/static/css/main.3d94c348.css",
+    "main.js": "/linktone-test/static/js/main.5d6b8b47.js",
+    "static/js/787.70c595c2.chunk.js": "/linktone-test/static/js/787.70c595c2.chunk.js",
+    "static/media/artist2.jpg": "/linktone-test/static/media/artist2.f9a73a9271ad6f0d6007.jpg",
+    "static/media/artist5.jpg": "/linktone-test/static/media/artist5.2314a19d4cc3c6f4f4a0.jpg",
+    "static/media/artist3.jpg": "/linktone-test/static/media/artist3.f77f310a0192d51425bc.jpg",
+    "static/media/artist6.jpg": "/linktone-test/static/media/artist6.eaeccf62dee5cda0e297.jpg",
+    "static/media/avatar.jpg": "/linktone-test/static/media/avatar.fa98d3b23a91dedaa9c7.jpg",
+    "static/media/artist4.jpg": "/linktone-test/static/media/artist4.543a55ef87a1917a336a.jpg",
+    "static/media/artist1.jpg": "/linktone-test/static/media/artist1.2efe23e5fd353c224168.jpg",
+    "static/media/arrow-down-gray.svg": "/linktone-test/static/media/arrow-down-gray.425abc12e95448ad81f3258c1291150a.svg",
+    "static/media/arrow-down-light.svg": "/linktone-test/static/media/arrow-down-light.586a90b83cf3f1657d18d627fdc8d766.svg",
+    "static/media/arrow-down.svg": "/linktone-test/static/media/arrow-down.780d3280896dc1ec8895ac796b899b3c.svg",
+    "static/media/exit-icon.svg": "/linktone-test/static/media/exit-icon.3d162f985ddb3eac79b3c075307da8a5.svg",
+    "index.html": "/linktone-test/index.html",
+    "static/media/menu-icon-white.svg": "/linktone-test/static/media/menu-icon-white.6da2da6feb505f9666b887073055155d.svg",
+    "static/media/profile-icon.svg": "/linktone-test/static/media/profile-icon.0e73a57a4aad4c31383efb2f99916183.svg",
+    "static/media/search.svg": "/linktone-test/static/media/search.4767dd04dd9c758821a60775f3e22af5.svg",
+    "static/media/search-light.svg": "/linktone-test/static/media/search-light.44026af678f8a879f09721918eefdcb0.svg",
+    "static/media/home.svg": "/linktone-test/static/media/home.0352628ade4667c3b7b8a26f024956ac.svg",
+    "main.3d94c348.css.map": "/linktone-test/static/css/main.3d94c348.css.map",
+    "main.5d6b8b47.js.map": "/linktone-test/static/js/main.5d6b8b47.js.map",
+    "787.70c595c2.chunk.js.map": "/linktone-test/static/js/787.70c595c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d94c348.css",
+    "static/js/main.5d6b8b47.js"
+  ]
+}
