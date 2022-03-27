@@ -6,8 +6,6 @@ const menuItems = ['Профиль', 'Релизы', 'Видео', 'Концер
 
 const CategoryItem = ({ icon, href, name, opened, onClick }) => {
 
-
-
   return (
     <>
       <a href={href} className={`category${opened ? ' opened' : ''}`} onClick={() => onClick(name)}>

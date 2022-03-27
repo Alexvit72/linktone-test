@@ -2,24 +2,13 @@ import React, { useState } from 'react';
 import menu from '../assets/images/menu-icon.png';
 import CategoryItem from './CategoryItem';
 import artists from '../assets/images/artists-icon.png';
-import music from '../assets/images/music-icon.png';
 
-const categories = [
-  {name: 'СЛОТ', href: '#', icon: music},
-  {name: 'Модем', href: '#', icon: music},
-  {name: 'Таймсквер', href: '#', icon: music},
-  {name: 'Нуки', href: '#', icon: music},
-];
+import categories from '../assets/categories';
 
 
 const ArtistNav = ({ shown, toggle }) => {
 
-  //const [openedNav, setOpenedNav] = useState(false);
   const [openedCategory, setOpenedCategory] = useState('');
-
-  /*const showWide = () => {
-    setOpenedNav(openedNav => !openedNav);
-  };*/
 
   const openMenu = (name) => {
     if (openedCategory === name) {
@@ -41,7 +30,7 @@ const ArtistNav = ({ shown, toggle }) => {
       </header>
       <div className="artists-nav-content">
         <div className="categories">
-          <a href="/" className="category category-title">
+          <a href="#" className="category category-title">
             <div className="category-inner">
               <div className="category-icon">
                 <img src={artists} alt="" />

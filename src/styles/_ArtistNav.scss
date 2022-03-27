@@ -49,6 +49,10 @@
     height: 100%;
     font-size: 0.8rem;
     line-height: 1.4rem;
+    transition: width 0.3s ease-in-out;
+    @media (max-width: 767px) {
+      width: 100vw;
+    }
     .category {
       width: 300px;
       padding: 15px 25px;
@@ -58,7 +62,7 @@
       color: #abb4be;
       transition: none;
       @media (max-width: 767px) {
-        width: 100vw;
+        width: 100%;
       }
       .category-inner {
         display: flex;

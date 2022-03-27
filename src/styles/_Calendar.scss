@@ -1,6 +1,11 @@
 .calendar {
   height: 100vh;
   background: #171717;
+  /*@media (max-width: 767px) {
+    width: 0;
+    right: 0;
+    transition: width 0.3s ease-in-out;
+  }*/
   .top {
     color: #999;
     font-size: 0.8rem;
@@ -38,6 +43,9 @@
       }
       .react-datepicker__navigation-icon--next::before {
         left: -20px;
+        @media (max-width: 767px) {
+          left: 0;
+        }
       }
       .react-datepicker__month-container {
         float: none;

@@ -16,7 +16,7 @@ const HeaderMain = () => {
       <h2>Артисты</h2>
       <div className="right-nav">
         <ul className="breadcrumbs">
-          <li><a href='/'><img src={home} alt="" /></a></li>
+          <li><a href='#'><img src={home} alt="" /></a></li>
           <li>Главная</li>
         </ul>
         <div className="toggle-right" onClick={(e) => openCalendar(e)} >

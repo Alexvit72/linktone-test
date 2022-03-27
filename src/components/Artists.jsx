@@ -5,12 +5,7 @@ import search from '../assets/images/search-light.svg';
 import arrow from '../assets/images/arrow-down-gray.svg';
 
 import artists from '../assets/artists';
-
-const artistsTypes = [
-  {name: 'Группы', count: 6},
-  {name: 'Солисты', count: 4},
-];
-
+import artistsTypes from '../assets/artistsTypes';
 
 const Artists = () => {
 
@@ -18,7 +13,6 @@ const Artists = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const handleChange = page => {
-    console.log('page', page);
     setCurrentPage(page);
   };
 

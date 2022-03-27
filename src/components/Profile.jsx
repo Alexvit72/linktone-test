@@ -29,11 +29,11 @@ const Profile = () => {
         <div className="menu">
           <div className="menu-item">
             <img src={profile} alt="" />
-            <a href="/">Профиль</a>
+            <a href="#">Профиль</a>
           </div>
           <div className="menu-item">
             <img src={exit} alt="" />
-            <a href="/">Выход</a>
+            <a href="#">Выход</a>
           </div>
         </div>
       </div>

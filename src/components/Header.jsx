@@ -16,13 +16,13 @@ const Header = ({ onClick }) => {
   return (
     <header className="App-header">
       <div  className="logo">
-        <a href="/"><img className="logo-image" src={logo} alt="linktone" /></a>
+        <a href="#"><img className="logo-image" src={logo} alt="linktone" /></a>
         <div className="toggle" onClick={onClick}>
           <img src={menu} alt="" />
         </div>
       </div>
       <div className="right">
-        <form action="/" onSubmit={(e) => searchRequest(e)}>
+        <form action="#" onSubmit={(e) => searchRequest(e)}>
           <div className="search-block">
             <input type="text"
               onChange={(e) => setValue(e.target.value)}
