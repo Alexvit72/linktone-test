@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/linktone-test/static/css/main.3d94c348.css",
-    "main.js": "/linktone-test/static/js/main.5d6b8b47.js",
+    "main.js": "/linktone-test/static/js/main.b8b03fe0.js",
     "static/js/787.70c595c2.chunk.js": "/linktone-test/static/js/787.70c595c2.chunk.js",
     "static/media/artist2.jpg": "/linktone-test/static/media/artist2.f9a73a9271ad6f0d6007.jpg",
     "static/media/artist5.jpg": "/linktone-test/static/media/artist5.2314a19d4cc3c6f4f4a0.jpg",
@@ -21,11 +21,11 @@
     "static/media/search-light.svg": "/linktone-test/static/media/search-light.44026af678f8a879f09721918eefdcb0.svg",
     "static/media/home.svg": "/linktone-test/static/media/home.0352628ade4667c3b7b8a26f024956ac.svg",
     "main.3d94c348.css.map": "/linktone-test/static/css/main.3d94c348.css.map",
-    "main.5d6b8b47.js.map": "/linktone-test/static/js/main.5d6b8b47.js.map",
+    "main.b8b03fe0.js.map": "/linktone-test/static/js/main.b8b03fe0.js.map",
     "787.70c595c2.chunk.js.map": "/linktone-test/static/js/787.70c595c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d94c348.css",
-    "static/js/main.5d6b8b47.js"
+    "static/js/main.b8b03fe0.js"
   ]
 }
